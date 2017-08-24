@@ -15,9 +15,22 @@ public class reloj{
             return cadResultado;
     }
     
-    /*public int ticToc(){
-        if(minuto<60){
-                minuto+
-            }
-    }*/
+    public void ticToc(){
+
+                if(minuto<60){ 
+                    minuto=minuto+1;
+                    
+                }
+                else{
+                    if(hora<24){
+                        hora=hora+1;
+                    }
+                    else{
+                        hora=0;
+                }
+                    minuto=0;
+                }
+                
+                
+    } 
 }
